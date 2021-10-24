@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portabilidad | Movistar Argentina</title>
+    <link href="imagenes/favicon.ico" rel="Shortcut Icon" />
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <header>
+        <div class="logotipo">
+            <img src="imagenes/logo.png" alt="">
+        </div>
+    </header>
+
+<section class="home">
+    <!--caja1-->
+    <div class="in-flex">
+        <form method="post" autocomplete="off" name="google-sheet">
+            <form action="" id="formulario" name="formulario" metodo="get">
+                <p class="completa">Completa los siguientes datos:</p>
+                <br>
+                <label for="linea" class="linea">Número de Línea</label>
+                <input type="text" class="form-control" placeholder="Ej: 1128643545" minlength="10" maxlength="10" size="15" name="LINEA-MV" id="linea" required>
+                
+                <label for="empresa" class="empresa">Compañía Actual</label>      
+                <select minlength="5" class="form-control" name="EMPRESA-MV" id="empresa" required>
+                    <option value=""></option>
+                    <option value="Personal">Personal</option>
+                    <option value="Claro">Claro</option>
+                    <option value="Movistar">Movistar</option>
+                    <option value="Tuenti">Tuenti</option>            
+                </select>
+        
+                <label for="mercado" class="mercado">Tipo de Servicio Actual</label>
+                <select minlength="7" class="form-control" name="MERCADO-MV" id="mercado" required>
+                    <option value=""></option>
+                    <option value="Pospago">Pospago</option>
+                    <option value="Prepago">Prepago</option>        
+                </select>
+        
+                <br>
+                <button type="submit" class="btn btn-primary" type="button" id="submitButton">
+                    <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    <span id="buttonText">Llamame</span>
+                </button>
+                <div class="alert alert-danger mt-2 d-none" role="alert" id="unknownError">
+                </div>
+        </form>
+    </div>
+
+    <!--caja2-->
+    <div class="in-flex" id="caja2">
+        <h1 class="trae">¡Traé tu número a Movistar!</h1>
+        <br>
+        <p class="elegi">Elegí tu plan ideal</p>
+        <br><br>
+        <h2 class="guarda">Pedí, pasa y GUARDA GIGAS para el mes que viene</h2>
+        <br><br>
+        <h3 class="test">¡30 GIGAS GRATIS!</h3>
+        <br><br><br>
+    </div>
+</section>
+
+<footer class="final">
+    <div class="logofooter">
+        <img src="imagenes/logo-footer.png" alt="">
+    </div>
+</footer>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyRTiwydyXX_MNfnX8hQJ4NXhPfNxxQ_JeE9fn01GHEHKwAeQXHfHSMzXbXj_sYqNMt/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => redirecinal())
+        .catch(error => console.error('Error!', error.message))
+    })
+
+    function redirecinal(){
+        document.location.href="outdex.html"; 
+    }
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>

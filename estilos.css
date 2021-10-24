@@ -1,0 +1,270 @@
+* {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Movistar text";
+}
+
+
+body {
+    background: #f2f2f2;
+    color: #50535a;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.in-flex {
+    flex: 1;
+    padding: 25px;
+    min-width: 250px;
+}
+
+.in-flex: first-child {
+    flex: 2;
+}
+
+.in-flex div {
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: auto;
+    height: 75px;
+    background: #fff;
+}
+
+.logotipo {
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    margin-left: 70px;
+    top: 15px;
+}
+
+form {
+    text-align: center;
+    width: 50% auto;
+    border: 1px solid #ccc;
+    margin: 7%;
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+}
+
+.completa {
+    text-align: center;
+    color: #50535a;
+    font-size: 20px;
+}
+
+.linea {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.empresa {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.mercado {
+    text-align: left;
+    margin-left: 5px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+    color:#50535a
+}
+
+input, select, button {
+    text-align: center;
+    margin-bottom: 4%;
+    width: 98.5%;
+    padding: 3%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+
+input:focus, select:focus {
+    border: 1.3px solid #5bc500;
+}
+
+input[type="submit"] {
+    margin-top: 2%;
+    margin-bottom: 0;
+    background: #5bc500;
+    color:#fff;
+    border:none;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+     background: #019df5;
+     cursor:pointer;
+}
+
+button {
+    margin-top: 2%;
+    margin-bottom: 0;
+    background: #5bc500;
+    color:#fff;
+    border:none;
+    font-size: 20px;
+}
+
+button:hover {
+     background: #019df5;
+     cursor:pointer;
+}
+
+body {
+    background:url(imagenes/w.jpg) no-repeat fixed top center #f2f2f2;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#caja2 {
+    margin: auto;
+}
+
+.trae {
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    font-size: 50px;
+    text-shadow: 0px 0px 7.5px #000;
+    font-family: "Guthen Bloots Alt1";
+    src: url("fuentes/Guthen Bloots Alt1.ttf");
+}
+
+@font-face {
+    font-family: "movistar text";
+    src:url("fuentes/movistar text.ttf");
+}
+
+.elegi {
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    font-size: 20px;
+    text-shadow: 0px 0px 7.5px #000;
+    font-family: "Movistar text";
+    src: url("fuentes/movistartext-regular-webfont.ttf");
+}
+
+.guarda {
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 0px 7.5px #000;
+}
+
+.test {
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    font-size: 45px;
+    text-shadow: 0px 0px 7.5px #000;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    color: #50535a;
+    font-size: 12px;
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+
+.gracias {
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 7.5px #000;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 100px;
+    font-family: "Guthen Bloots Alt1";
+    src: url("fuentes/Guthen Bloots Alt1.ttf");
+    font-weight: lighter;
+    line-height: auto;
+    letter-spacing: 0.8px;
+    margin-bottom: 0%;
+}
+
+.asesor {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 7.5px #000;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 24px;
+    font-family: "Movistar text";
+    src: url("fuentes/movistartext-regular-webfont.ttf");
+    font-weight: lighter;
+    line-height: auto;
+    letter-spacing: 0.6px;
+}
+
+.body2 {
+    background:url(imagenes/w.jpg) no-repeat fixed top center #f2f2f2;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.home1 {
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    padding-bottom: 20%;
+}
